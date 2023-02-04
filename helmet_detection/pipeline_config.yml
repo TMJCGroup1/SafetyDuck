@@ -1,0 +1,8 @@
+nodes:
+- input.visual:
+   source: 0
+- model.mtcnn
+- custom_nodes.draw.face_rectangle
+- custom_nodes.model.helmet_detect
+- output.screen
+
