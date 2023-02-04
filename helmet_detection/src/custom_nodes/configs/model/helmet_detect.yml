@@ -1,5 +1,0 @@
-input: ["img","bound"]
-output: ["pred_label", "pred_score"]
-
-weights_parent_dir: weights
-class_label_map: {0: "helmet", 1: "no_helmet"}
