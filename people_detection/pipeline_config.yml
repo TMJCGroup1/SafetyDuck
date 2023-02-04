@@ -1,0 +1,13 @@
+nodes:
+- input.visual:
+    source: Construction.mp4
+- model.yolo
+- dabble.bbox_count
+- dabble.statistics:
+    identity: count
+- draw.bbox:
+    show_labels: True
+- draw.legend:
+    show: ["count"]
+- custom_nodes.draw.safety
+- output.screen
