@@ -31,7 +31,7 @@ cd SafetyDuck
 ```
 cd helmet_detection
 ```
-In the [pipeline_config.yml](/docs/helmet_detection/pipeline_config.yml), the config is as such:
+In the [pipeline_config.yml](https://github.com/TMJCGroup1/SafetyDuck/blob/main/helmet_detection/pipeline_config.yml), the config is as such:
 ```
 nodes:
 - input.visual:
@@ -53,7 +53,7 @@ peekingduck run
 ``` 
 cd observer_detection
 ```
-In the [pipeline_config.yml](https://github.com/TMJCGroup1/SafetyDuck/blob/main/helmet_detection/pipeline_config.yml), the config is as such:
+In the [pipeline_config.yml](https://github.com/TMJCGroup1/SafetyDuck/blob/main/people_detection/pipeline_config.yml), the config is as such:
 ```
 nodes:
 - input.visual:
