@@ -53,7 +53,7 @@ peekingduck run
 ``` 
 cd observer_detection
 ```
-In the [pipeline_config.yml](/docs/helmet_detection/pipeline_config.yml), the config is as such:
+In the [pipeline_config.yml](./helmet_detection/pipeline_config.yml), the config is as such:
 ```
 nodes:
 - input.visual:
