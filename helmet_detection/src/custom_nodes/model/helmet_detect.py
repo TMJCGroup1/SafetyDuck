@@ -41,7 +41,7 @@ class Node(AbstractNode):
                   try:
                         img0 = img[int(bound[0][1]*180/480):int(bound[0][3]*180/480),int(bound[0][0]*180/640):int(bound[0][2]*180/640)]
                         img0 = cv2.resize(img0, (IMG_WIDTH, IMG_HEIGHT))
-                        cv2.imshow('target1', img0)
+                        #cv2.imshow('target1', img0)
                         img0 = np.expand_dims(img0, axis=0)
                         predictions0 = self.model.predict(img0)
                         score0 = tf.nn.softmax(predictions0[0])
