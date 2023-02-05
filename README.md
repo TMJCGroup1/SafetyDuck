@@ -7,7 +7,7 @@ It can check whether all construction workers are wearing safety helmet in the c
 ![Screenshot (38)](https://user-images.githubusercontent.com/124423670/216811595-99f6e432-b31e-4b99-a5cf-0f94dd256cff.png)
 ![Screenshot (37)](https://user-images.githubusercontent.com/124423670/216811617-aa0d1fa1-ab70-45bb-9327-954532ee6d84.png)
 
-### People_detection
+### Observer_detection
 It can count the number of people at a site and determine their safety status. Example, at least one competent safety observer must always be there when workers are engaging in working at heights.
 
 ![ddsgdsafgs](https://user-images.githubusercontent.com/124423670/216811422-c60da4a5-e541-4afd-9983-2dec07e66d45.png)
