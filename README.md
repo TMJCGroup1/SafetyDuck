@@ -57,10 +57,16 @@ In the [pipeline_config.yml](https://github.com/TMJCGroup1/SafetyDuck/blob/main/
 ```
 nodes:
 - input.visual:
-   source: true_positive.mp4  #change this to (true_negative.mp4) for unsafety condition
-- model.mtcnn
-- custom_nodes.draw.face_rectangle
-- custom_nodes.model.helmet_detect
+    source: true_postive.mp4  #true_negative.mp4   for unsafe condition
+- model.yolo
+- dabble.bbox_count
+- dabble.statistics:
+    identity: count
+- draw.bbox:
+    show_labels: True
+- draw.legend:
+    show: ["count"]
+- custom_nodes.draw.safety
 - output.screen
 ```
 ``` 
