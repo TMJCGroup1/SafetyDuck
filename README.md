@@ -31,17 +31,18 @@ cd SafetyDuck
 ```
 cd helmet_detection
 ```
-In the [pipeline_config.yml](/docs/helmet_detection/pipeline_config.yml), the config is as such:
+In the [pipeline_config.yml](https://github.com/TMJCGroup1/SafetyDuck/blob/main/helmet_detection/pipeline_config.yml), the config is as such:
 ```
 nodes:
 - input.visual:
-   source: 0
+   source: trial.mp4  #change this (0 for webcam)
 - model.mtcnn
 - custom_nodes.draw.face_rectangle
 - custom_nodes.model.helmet_detect
 - output.screen
 ```
-By default, the AI will run our demo.mp4, to change the source, simply change the ```source``` config to the path of the file you want to run.\
+OPTIONAL:
+By default, the AI will run our trial.mp4, to change the source, simply change the ```source``` config to the path of the file you want to run.\
 For webcam detection,
 ```source: 0```  \
 Run the program in terminal.
@@ -52,7 +53,22 @@ peekingduck run
 ``` 
 cd observer_detection
 ```
-The source of the video can also be change for observer detection
+In the [pipeline_config.yml](https://github.com/TMJCGroup1/SafetyDuck/blob/main/people_detection/pipeline_config.yml), the config is as such:
+```
+nodes:
+- input.visual:
+    source: true_postive.mp4  #true_negative.mp4   for unsafe condition
+- model.yolo
+- dabble.bbox_count
+- dabble.statistics:
+    identity: count
+- draw.bbox:
+    show_labels: True
+- draw.legend:
+    show: ["count"]
+- custom_nodes.draw.safety
+- output.screen
+```
 ``` 
 peekingduck run
 ```
