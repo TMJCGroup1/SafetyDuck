@@ -1,5 +1,5 @@
 # observable_peekingduck
-This is our first project on using PeekingDuck to ensure safety in construction sites.
+This project implements computer vision using PeekingDuck at construction sites to ensure all contruction works are done under safety condition.
 ## Features
 ### Helmet_detection
 Can detect whether construction helments are present. 
