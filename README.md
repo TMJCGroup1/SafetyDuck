@@ -12,3 +12,47 @@ It can count the number of people at a site and determine their safety status. E
 
 ![ddsgdsafgs](https://user-images.githubusercontent.com/124423670/216811422-c60da4a5-e541-4afd-9983-2dec07e66d45.png)
 ![sfgbdgfh](https://user-images.githubusercontent.com/124423670/216811475-f5570d33-6e2c-4a80-8be0-ed3e70638632.png)
+
+## Installation
+Install [PeekingDuck](https://github.com/aisingapore/PeekingDuck#readme)
+
+Clone the GitHub repository in the terminal using ```git```
+
+```
+git clone https://github.com/TMJCGroup1/SafetyDuck
+```
+Or download the repository using the download function in GitHub
+## Usage
+Go to the SafetyDuck directory.
+```
+cd SafetyDuck
+```
+### Helmet Detection
+```
+cd helmet_detection
+```
+In the [pipeline_config.yml](/docs/helmet_detection/pipeline_config.yml), the config is as such:
+```
+nodes:
+- input.visual:
+   source: 0
+- model.mtcnn
+- custom_nodes.draw.face_rectangle
+- custom_nodes.model.helmet_detect
+- output.screen
+```
+By default, the AI will run our demo.mp4, to change the source, simply change the ```source``` config to the path of the file you want to run.\
+For webcam detection,
+```source: 0```  \
+Run the program in terminal.
+```
+peekingduck run
+```
+### Observer Detection
+``` 
+cd observer_detection
+```
+The source of the video can also be change for observer detection
+``` 
+peekingduck run
+```
