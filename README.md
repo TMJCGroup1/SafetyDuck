@@ -35,14 +35,14 @@ In the [pipeline_config.yml](/docs/helmet_detection/pipeline_config.yml), the co
 ```
 nodes:
 - input.visual:
-   source: trial.mp4  # change this (0 for webcam)
+   source: trial.mp4  #change this (0 for webcam)
 - model.mtcnn
 - custom_nodes.draw.face_rectangle
 - custom_nodes.model.helmet_detect
 - output.screen
 ```
 OPTIONAL:
-By default, the AI will run our demo.mp4, to change the source, simply change the ```source``` config to the path of the file you want to run.\
+By default, the AI will run our trial.mp4, to change the source, simply change the ```source``` config to the path of the file you want to run.\
 For webcam detection,
 ```source: 0```  \
 Run the program in terminal.
@@ -53,7 +53,16 @@ peekingduck run
 ``` 
 cd observer_detection
 ```
-The source of the video can also be change for observer detection
+In the [pipeline_config.yml](/docs/helmet_detection/pipeline_config.yml), the config is as such:
+```
+nodes:
+- input.visual:
+   source: true_positive.mp4  #change this to (true_negative.mp4) for unsafety condition
+- model.mtcnn
+- custom_nodes.draw.face_rectangle
+- custom_nodes.model.helmet_detect
+- output.screen
+```
 ``` 
 peekingduck run
 ```
