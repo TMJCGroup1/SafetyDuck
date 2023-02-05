@@ -1,6 +1,6 @@
 nodes:
 - input.visual:
-    source: true_postive.mp4  #true_negative.mp4   for unsafe condition
+    source: true_positive.mp4  #true_negative.mp4   for unsafe condition
 - model.yolo
 - dabble.bbox_count
 - dabble.statistics:
