@@ -1,4 +1,4 @@
-# ConstructionSafetyAI
+# SafetyDuck
 This project implements computer vision using PeekingDuck at construction sites to ensure all contruction works are done under safety condition.
 ## Features
 ### Helmet_detection
