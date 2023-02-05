@@ -35,12 +35,13 @@ In the [pipeline_config.yml](/docs/helmet_detection/pipeline_config.yml), the co
 ```
 nodes:
 - input.visual:
-   source: 0
+   source: trial.mp4  # change this (0 for webcam)
 - model.mtcnn
 - custom_nodes.draw.face_rectangle
 - custom_nodes.model.helmet_detect
 - output.screen
 ```
+OPTIONAL:
 By default, the AI will run our demo.mp4, to change the source, simply change the ```source``` config to the path of the file you want to run.\
 For webcam detection,
 ```source: 0```  \
