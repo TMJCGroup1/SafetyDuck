@@ -3,8 +3,10 @@ This project implements computer vision using PeekingDuck at construction sites 
 ## Features
 ### Helmet_detection
 It can check whether all construction workers are wearing safety helmet in the construction site.
-![Screenshot (38)](https://user-images.githubusercontent.com/124423670/216810959-e7809fde-355a-4862-a5d7-08567edd3a6d.png)
-![Screenshot (37)](https://user-images.githubusercontent.com/124423670/216810941-df0c9d40-1582-4f61-a1c6-da8ae86e3450.png)
+
+![Screenshot (38)](https://user-images.githubusercontent.com/124423670/216811595-99f6e432-b31e-4b99-a5cf-0f94dd256cff.png)
+![Screenshot (37)](https://user-images.githubusercontent.com/124423670/216811617-aa0d1fa1-ab70-45bb-9327-954532ee6d84.png)
+
 ### People_detection
 It can count the number of people at a site and determine their safety status. Example, at least one competent safety observer must always be there when workers are engaging in working at heights.
 
